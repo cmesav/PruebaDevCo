@@ -1,5 +1,6 @@
 # PruebaDevCo
-Este proyecto fue generado para la prueba tecnica de ingreso a DevCo
+Este proyecto fue generado para la prueba tecnica de ingreso a DevCo, en la carpeta documentacion se encuentra el plan 
+de pruebas y los casos de prueba. 
 
 # Configuracion
 
@@ -51,7 +52,7 @@ continuacion se explica como realizar dichas configuraciones:
 - chromedriver: mostrara la version instalada del driver del navegador chrome.
 - geckodriver: muestra la version del driver de firefox.
 
-#Ejecución
+# Ejecución
 Para correr la automatización se ejecuta el siguiente comando:
 
 * gradlew clean test
