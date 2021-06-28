@@ -17,7 +17,8 @@ parameters:
     displayName: Correo
 
 pool:
-  vmImage: ubuntu-latest
+  name: default
+  demands: DESKTOP-EB8C0S9
 
 steps:
 - task: Gradle@2
