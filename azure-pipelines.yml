@@ -34,6 +34,7 @@ steps:
     spotBugsAnalysis: false
 
 - task: PublishBuildArtifacts@1
+  condition: always()
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)/target'
     ArtifactName: 'drop/reporte'
