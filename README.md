@@ -20,15 +20,13 @@ continuacion se explica como realizar dichas configuraciones:
   seleccionar "Binary-only", descargar y descomprimir de preferencia directamente en el disco C.
 
 * WEBDRIVER:
-- descargar los drivers de los navegadores a usar, chromeDriver para chrome y geckoDriver para firefox:
-  Para chrome se debe descargar segun la version que se tenga del navegador de la siguiente pagina:
+- descargar el driver del navegador chrome:
+  Se debe descargar segun la version que se tenga del navegador de la siguiente pagina:
   https://chromedriver.chromium.org/downloads
-  Para firefox se descarga desde :
-  https://github.com/mozilla/geckodriver/releases
   Se debe descomprimir los archivos y ponerlos en una ruta facil de ubicar( se recomienda hacerlo en el disco C,
   ejemplo : C:\BrowserDrivers)
 
-* VARIABLES DE ENTORNO:
+* VARIABLES DE ENTORNO: (configuracion para windows)
 - Para configurar las variables de entorno, en el menu inicio en la barra de busqueda escribir variable, en los resultados
   seleccionar la opcion "editar las variables de entorno del sistema", en las propiedades del sistema en la parte inferior
   selecionar "variables de entorno", allí dependiendo de los permisos sobre el equipo (si se es administrador realizarlo
@@ -56,6 +54,7 @@ continuacion se explica como realizar dichas configuraciones:
 Para correr la automatización se ejecuta el siguiente comando:
 
 * gradlew clean test -Dpassword="A123456B" -Duser="mesa.cristian@gmail.com"
+* las variables password y user en el comando son un ejemplo, puede usarse cualquier par de correo y password registrados.
 
 # Evidencias
 - Las evidencias generadas quedan alamacenadas en la siguiente ruta dentro dela carpeta del proyecto:
