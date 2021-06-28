@@ -4,7 +4,17 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- main
+- none
+
+parameters:
+  - name: password
+    type: string
+    default: A123456B
+    displayName: Password
+  - name: correo
+    type: string
+    default: mesa.cristian@gmail.com
+    displayName: Password
 
 pool:
   vmImage: ubuntu-latest
@@ -13,7 +23,7 @@ steps:
 - task: Gradle@2
   inputs:
     gradleWrapperFile: 'gradlew'
-    tasks: 'clean test -Dpassword="A123456B" -Duser="mesa.cristian@gmail.com"'
+    tasks: 'clean test -Dpassword=${{parameters.password}} -Duser=${{parameters.correo}}'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
