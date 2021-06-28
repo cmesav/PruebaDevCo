@@ -17,9 +17,11 @@ public class Cambiar implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
         Set<String> pestanas = BrowseTheWeb.as(actor).getDriver().getWindowHandles();
+
         for (String pestana: pestanas){
             BrowseTheWeb.as(actor).getDriver().switchTo().window(pestana);
             if(BrowseTheWeb.as(actor).getDriver().getTitle().contains(titulo)){
+
                 break;
             }
         }
