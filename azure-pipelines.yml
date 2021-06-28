@@ -18,7 +18,7 @@ parameters:
 
 pool:
   name: default
-  demands: DESKTOP-EB8C0S9
+#  demands: DESKTOP-EB8C0S9
 
 steps:
 - task: Gradle@2
