@@ -3,28 +3,28 @@ package com.travelocity.ui;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class FormularioVuelos {
+public class FormularioPaquetes {
 
-    private FormularioVuelos() {
+    private FormularioPaquetes() {
     }
 
     public static final Target ORIGEN = Target.the("Campo origen")
             .locatedBy("//button[@aria-label='Leaving from']");
 
     public static final Target INPUT_ORIGEN = Target.the("Input Origen")
-            .located(By.id("location-field-leg1-origin"));
+            .located(By.id("location-field-origin"));
 
     public static final Target VUELO_ORIGEN = Target.the("Aeropuerto Origen")
-            .locatedBy("(//*[contains(@data-stid,'field-leg1-origin')])[6]");
+            .locatedBy("(//*[contains(@data-stid,'field-origin')])[6]");
 
     public static final Target DESTINO = Target.the("Campo destino")
             .locatedBy("//button[@aria-label='Going to']");
 
     public static final Target INPUT_DESTINO = Target.the("Input destino")
-            .located(By.id("location-field-leg1-destination"));
+            .located(By.id("location-field-destination"));
 
     public static final Target VUELO_DESTINO = Target.the("Aeropuerto Destino")
-            .locatedBy("(//*[contains(@data-stid,'field-leg1-destination')])[6]");
+            .locatedBy("(//*[contains(@data-stid,'field-destination')])[6]");
 
     public static final Target CHECK_IN = Target.the("Check In")
             .located(By.id("d1-btn"));

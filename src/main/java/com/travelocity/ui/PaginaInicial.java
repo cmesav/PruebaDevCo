@@ -47,5 +47,8 @@ public class PaginaInicial {
     public static final Target VUELOS = Target.the("Seccion vuelos")
             .locatedBy("//*[contains(@aria-controls,'flight')]");
 
+    public static final Target PAQUETES = Target.the("Seccion vuelos")
+            .locatedBy("//*[contains(@aria-controls,'package')]");
+
 
 }
