@@ -24,18 +24,17 @@ steps:
   inputs:
     gradleWrapperFile: 'gradlew'
     tasks: 'clean test -Dpassword=${{parameters.password}} -Duser=${{parameters.correo}}'
-    publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml'
+    publishJUnitResults: false
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     gradleOptions: '-Xmx3072m'
     sonarQubeRunAnalysis: false
     spotBugsAnalysis: false
 
-#- task: PublishBuildArtifacts@1
-#  condition: always()
-#  inputs:
-#    PathtoPublish: '$(Build.ArtifactStagingDirectory)/target'
-#    ArtifactName: 'drop/reporte'
-#   publishLocation: 'Container'
-#  displayName: 'Publicacion reporte'
+- task: PublishBuildArtifacts@1
+  condition: always()
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/target'
+    ArtifactName: 'drop/reporte'
+    publishLocation: 'Container'
+  displayName: 'Publicacion reporte'
