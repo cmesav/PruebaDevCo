@@ -18,7 +18,6 @@ parameters:
 
 pool:
   name: default
-#  demands: DESKTOP-EB8C0S9
 
 steps:
 - task: Gradle@2
@@ -33,10 +32,10 @@ steps:
     sonarQubeRunAnalysis: false
     spotBugsAnalysis: false
 
-- task: PublishBuildArtifacts@1
-  condition: always()
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/target'
-    ArtifactName: 'drop/reporte'
-    publishLocation: 'Container'
-  displayName: 'Publicacion reporte'
+#- task: PublishBuildArtifacts@1
+#  condition: always()
+#  inputs:
+#    PathtoPublish: '$(Build.ArtifactStagingDirectory)/target'
+#    ArtifactName: 'drop/reporte'
+#   publishLocation: 'Container'
+#  displayName: 'Publicacion reporte'
