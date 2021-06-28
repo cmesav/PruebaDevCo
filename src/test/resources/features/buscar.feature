@@ -29,7 +29,7 @@ Característica: realizar busqueda
     Esquema del escenario: buscar paquetes
       Cuando busca paquetes con origen "<ciudadOrigen>" destino "<ciudadDestino>" y fechas "<checkIn>" y "<check-out>"
       Y selecciona el hotel mas barato
-      Entonces vera el listado de "vuelos" disponibles
+
 
       Ejemplos:
         | ciudadOrigen | ciudadDestino | checkIn | check-out |

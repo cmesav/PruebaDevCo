@@ -9,6 +9,6 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = {"src/test/resources/features/verificar_recaptcha.feature",
         "src/test/resources/features/buscar.feature"},
         glue = {"com.travelocity.setup", "com.travelocity.stepdefinitions"},
-        snippets = SnippetType.CAMELCASE, tags = "@CP_8")
+        snippets = SnippetType.CAMELCASE, tags = "")
 public class Travelocity {
 }

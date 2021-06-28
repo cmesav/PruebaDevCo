@@ -1,5 +1,6 @@
 package com.travelocity.tasks;
 
+import com.travelocity.interactions.Cambiar;
 import com.travelocity.ui.Resultados;
 import com.travelocity.utils.MenorValor;
 import net.serenitybdd.screenplay.Actor;
@@ -32,7 +33,9 @@ public class Seleccionar implements Task {
         System.out.println("prueba "+ (MenorValor.enHotel(values)));
         actor.attemptsTo(
                 Scroll.to(Resultados.ORDENAR),
-                Click.on(Resultados.HOTEL_BARATO.of(String.valueOf(MenorValor.enHotel(values)))));
+                Click.on(Resultados.HOTEL_BARATO.of(String.valueOf(MenorValor.enHotel(values)))),
+                Cambiar.ventana("Hotel")
+        );
     }
 
     public static Seleccionar hotelMasBarato() {
