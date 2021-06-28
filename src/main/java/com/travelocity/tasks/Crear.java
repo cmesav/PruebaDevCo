@@ -12,7 +12,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 
 public class Crear implements Task {
 
-    Usuario usuario;
+    private final Usuario usuario;
 
     public Crear(Usuario usuario) {
         this.usuario = usuario;
@@ -24,8 +24,7 @@ public class Crear implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-//        Usuario usuario = new Usuario();
-        actor.attemptsTo(Click.on(PaginaInicial.INICIAR_SESION),
+        actor.attemptsTo(Click.on(PaginaInicial.MENU_INICIAR_SESION),
                 Click.on(PaginaInicial.CREAR_CUENTA),
                 Enter.theValue(usuario.getNombre()).into(CrearCuenta.NOMBRE),
                 Enter.theValue(usuario.getApellido()).into(CrearCuenta.APELLIDOS),

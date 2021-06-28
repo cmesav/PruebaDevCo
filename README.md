@@ -55,7 +55,7 @@ continuacion se explica como realizar dichas configuraciones:
 # Ejecución
 Para correr la automatización se ejecuta el siguiente comando:
 
-* gradlew clean test
+* gradlew clean test -Dpassword="A123456B" -Duser="mesa.cristian@gmail.com"
 
 # Evidencias
 - Las evidencias generadas quedan alamacenadas en la siguiente ruta dentro dela carpeta del proyecto:

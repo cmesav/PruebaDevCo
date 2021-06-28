@@ -8,7 +8,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
-public class TravelocityHokks {
+public class TravelocityHooks {
 
     @Managed
     private static WebDriver suNavegador;

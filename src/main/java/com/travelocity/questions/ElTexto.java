@@ -5,11 +5,11 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.targets.Target;
 
-public class ElMensaje implements Question<String> {
+public class ElTexto implements Question<String> {
 
     Target elemento;
 
-    public ElMensaje(Target elemento){
+    public ElTexto(Target elemento){
         this.elemento = elemento;
     }
 
@@ -18,7 +18,7 @@ public class ElMensaje implements Question<String> {
         return Text.of(elemento).viewedBy(actor).asString();
     }
 
-    public static ElMensaje deRespuestaEn(Target elemento){
-        return new ElMensaje(elemento);
+    public static ElTexto enElCampo(Target elemento){
+        return new ElTexto(elemento);
     }
 }
