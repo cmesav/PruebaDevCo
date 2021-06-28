@@ -15,7 +15,7 @@ public class FormularioVuelos {
             .located(By.id("location-field-leg1-origin"));
 
     public static final Target VUELO_ORIGEN = Target.the("Aeropuerto Origen")
-            .locatedBy("(//*[contains(@data-stid,'field-leg1-origin')])[6]");
+            .locatedBy("(//*[contains(@data-stid,'field-leg1-origin')])[7]");
 
     public static final Target DESTINO = Target.the("Campo destino")
             .locatedBy("//button[@aria-label='Going to']");
@@ -24,7 +24,7 @@ public class FormularioVuelos {
             .located(By.id("location-field-leg1-destination"));
 
     public static final Target VUELO_DESTINO = Target.the("Aeropuerto Destino")
-            .locatedBy("(//*[contains(@data-stid,'field-leg1-destination')])[6]");
+            .locatedBy("(//*[contains(@data-stid,'field-leg1-destination')])[7]");
 
     public static final Target CHECK_IN = Target.the("Check In")
             .located(By.id("d1-btn"));
