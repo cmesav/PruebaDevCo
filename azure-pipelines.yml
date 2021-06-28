@@ -14,7 +14,7 @@ parameters:
   - name: correo
     type: string
     default: mesa.cristian@gmail.com
-    displayName: Password
+    displayName: Correo
 
 pool:
   vmImage: ubuntu-latest
